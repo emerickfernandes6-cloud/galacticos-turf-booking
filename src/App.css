@@ -323,7 +323,6 @@ h1 {
 
 }
 .booking-details {
-  border-left: 4px solid orange;
   padding-left: 12px;
   width: 220px;      /* was 260px */
   margin-left: 20px; /* move everything left */
@@ -362,7 +361,7 @@ h1 {
 
   .customer-name,
   .customer-phone {
-    margin-left: -20px;
+    margin-left: 30px;
   }
 
 }
