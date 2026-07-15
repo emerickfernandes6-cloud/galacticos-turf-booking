@@ -362,7 +362,7 @@ h1 {
 
   .customer-name,
   .customer-phone {
-    margin-left: 20px;
+    margin-left: -20px;
   }
 
 }
