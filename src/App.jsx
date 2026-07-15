@@ -130,8 +130,30 @@ onClick={() => {
 
     <div className="slot-paid">
 
+  <div className="booking-details">
+
+    <div className="booking-top">
+
       <div className="customer-name">
         👤 {booking.name}
+      </div>
+
+      <span
+        className={
+          booking.sport === "Cricket"
+            ? "cricket-badge"
+            : "football-badge"
+        }
+      >
+        {booking.sport}
+      </span>
+
+    </div>
+
+    <div className="booking-bottom">
+
+      <div className="customer-phone">
+        📞 {booking.phone}
       </div>
 
       <div className="paid-status">
@@ -140,13 +162,35 @@ onClick={() => {
 
     </div>
 
+  </div>
+
+</div>
+
   ) : (
 
     <div className="slot-pending">
 
+  <div className="booking-details">
+
+    <div className="booking-top">
+
       <div className="customer-name">
         👤 {booking.name}
       </div>
+
+      <span
+        className={
+          booking.sport === "Cricket"
+            ? "cricket-badge"
+            : "football-badge"
+        }
+      >
+        {booking.sport}
+      </span>
+
+    </div>
+
+    <div className="booking-bottom">
 
       <div className="customer-phone">
         📞 {booking.phone}
@@ -157,6 +201,10 @@ onClick={() => {
       </div>
 
     </div>
+
+  </div>
+
+</div>
 
   )
 ) : (

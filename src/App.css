@@ -322,3 +322,37 @@ h1 {
   }
 
 }
+.booking-details {
+  border-left: 4px solid orange;
+  padding-left: 12px;
+  width: 260px;
+}
+
+.booking-top,
+.booking-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-bottom {
+  margin-top: 6px;
+}
+
+.football-badge {
+  background: #16a34a;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.cricket-badge {
+  background: #f97316;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+}

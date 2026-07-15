@@ -55,7 +55,13 @@ function Booking() {
   const [name, setName] = useState(existingBooking?.name || "");
 
   const [phone, setPhone] = useState(existingBooking?.phone || "");
-  const totalAmount = 1000;
+  const [sport, setSport] = useState(
+  existingBooking?.sport || "Football"
+);
+
+const totalAmount =
+  sport === "Football" ? 1000 : 1500;
+
   const [amountPaid, setAmountPaid] = useState(
   existingBooking?.amountPaid ?? 200
 );
@@ -72,12 +78,13 @@ function Booking() {
   }
 
   const bookingData = {
-    name,
-    phone,
-    totalAmount,
-    amountPaid: Number(amountPaid),
-    balance,
-  };
+  sport,
+  name,
+  phone,
+  totalAmount,
+  amountPaid: Number(amountPaid),
+  balance,
+};
 
   if (existingBooking) {
     updateBooking(
@@ -234,7 +241,21 @@ function removeBooking() {
           />
 
 
-        </div><div className="form-group">
+        </div>
+        <div className="form-group">
+
+  <label>Sport</label>
+
+  <select
+    value={sport}
+    onChange={(e) => setSport(e.target.value)}
+  >
+    <option value="Football">⚽ Football</option>
+    <option value="Cricket">🏏 Cricket</option>
+  </select>
+
+</div>
+  <div className="form-group">
 
   <label>Total Amount (₹)</label>
 

@@ -42,12 +42,13 @@ useEffect(() => {
         }
 
         loadedBookings[booking.ground][booking.day][booking.time] = {
-          name: booking.name,
-          phone: booking.phone,
-          totalAmount: booking.totalAmount,
-          amountPaid: booking.amountPaid,
-          balance: booking.balance,
-        };
+  sport: booking.sport,
+  name: booking.name,
+  phone: booking.phone,
+  totalAmount: booking.totalAmount,
+  amountPaid: booking.amountPaid,
+  balance: booking.balance,
+};
 
       });
 
@@ -62,9 +63,7 @@ useEffect(() => {
 
 }, []);
 
-useEffect(() => {
-  localStorage.setItem("bookings", JSON.stringify(bookings));
-}, [bookings]);
+
 
   const addBooking = async (ground, day, time, booking) => {
 
