@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useBookings } from "./BookingContext";
-import "./App.css"
+import { useBookings } from "../context/BookingContext";
+import "../App.css";
 
 
 const grounds = [
@@ -115,8 +115,6 @@ function removeBooking() {
   navigate("/");
 
 }
-
-
   return (
 
     <div className="booking-page">

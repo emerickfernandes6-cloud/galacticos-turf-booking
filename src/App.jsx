@@ -2,10 +2,10 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useBookings } from "./BookingContext";
+import { useBookings } from "./context/BookingContext";
 import './App.css'
 import { Link, Routes, Route } from 'react-router-dom'
-import Booking from './Booking'
+import Booking from "./components/Booking";
 
 
 const grounds = [
