@@ -290,7 +290,49 @@ h1 {
 .delete-button:hover {
   background: darkred;
 }
+/* ========================= */
+/* Booking Details */
+/* ========================= */
+
+.booking-details {
+  border-left: 4px solid orange;
+  padding-left: 12px;
+  width: 220px;
+  margin-left: 20px;
+}
+
+.booking-top,
+.booking-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-bottom {
+  margin-top: 6px;
+}
+
+.football-badge {
+  background: #16a34a;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.cricket-badge {
+  background: #f97316;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* ========================= */
 /* Mobile */
+/* ========================= */
 
 @media (max-width: 600px) {
 
@@ -320,47 +362,14 @@ h1 {
     font-size: 14px;
   }
 
-}
-.booking-details {
- 
-  padding-left: 12px;
-  width: 220px;
-  margin-left: 40px;
-}
-.booking-top,
-.booking-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.booking-bottom {
-  margin-top: 6px;
-}
-
-.football-badge {
-  background: #16a34a;
-  color: white;
-  padding: 3px 10px;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.cricket-badge {
-  background: #f97316;
-  color: white;
-  padding: 3px 10px;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: bold;
-}
-/* Mobile only */
-@media (max-width: 768px) {
+  .booking-details {
+    width: 220px;
+    margin-left: 20px;
+  }
 
   .customer-name,
   .customer-phone {
-    margin-left: 10px;
+    margin-left: 20px;
   }
 
 }
