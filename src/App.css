@@ -42,7 +42,7 @@
   color: #16a34a;
   font-weight: bold;
   border-left: 4px solid #16a34a;
-  padding-left: 10px;
+  padding-left: 40px;
 }
 
 .slot-pending {
@@ -53,7 +53,7 @@
 .slot-paid {
   color: #111827;
   border-left: 4px solid #2196f3;
-  padding-left: 10px;
+  padding-left: 40px;
 }
 
 .customer-name {
@@ -322,7 +322,7 @@ h1 {
 
 }
 .booking-details {
-  border-left: 4px solid orange;
+ 
   padding-left: 12px;
   width: 220px;
   margin-left: 40px;
