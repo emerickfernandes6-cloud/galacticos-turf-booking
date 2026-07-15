@@ -325,7 +325,8 @@ h1 {
 .booking-details {
   border-left: 4px solid orange;
   padding-left: 12px;
-  width: 260px;
+  width: 220px;      /* was 260px */
+  margin-left: 20px; /* move everything left */
 }
 
 .booking-top,
